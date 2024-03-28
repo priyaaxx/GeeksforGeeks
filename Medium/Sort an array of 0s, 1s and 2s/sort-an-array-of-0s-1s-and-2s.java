@@ -10,36 +10,37 @@ import java.util.*;
 
 class Solution
 {
-    public static void swap(int []arr ,int a , int b){
-        int temp = arr[a] ; 
-        arr[a] = arr[b] ;
-        arr[b] = temp ;
-    }
+    // public static void swap(int []arr ,int a , int b){
+    //     int temp = arr[a] ; 
+    //     arr[a] = arr[b] ;
+    //     arr[b] = temp ;
+    // }
     
     public static void sort012(int a[], int n)
     {
          
         
-        int l = 0 ; 
-        int r = n -1 ;
-        int i = 0 ;
+        // int l = 0 ; 
+        // int r = n -1 ;
+        // int i = 0 ;
         
-        while( i <= r){
+        // while( i <= r){
             
-            if(a[i] == 2){
+        //     if(a[i] == 2){
                 
-                swap(a ,i , r);
-                r--;
-                i--;
-            }
-            else if(a[i] == 0 ){
+        //         swap(a ,i , r);
+        //         r--;
+        //         i--;
+        //     }
+        //     else if(a[i] == 0 ){
                 
-                swap(a ,i , l);
-                l++ ;
-            }
+        //         swap(a ,i , l);
+        //         l++ ;
+        //     }
             
-            i++;
-        }
+        //     i++;
+        // }
+        Arrays.sort(a);
          
     }
 }
